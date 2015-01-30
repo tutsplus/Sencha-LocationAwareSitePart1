@@ -1,0 +1,166 @@
+/* 
+    Document   : Locator
+    Created on : Mar 11, 2013, 8:50:27 PM
+    Author     : SWARNENDU
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/****************** General styles *********************/
+
+body,
+.default-bg.x-container,
+.default-bg.x-container .x-scroll-view {
+				background: url(../images/bg.jpg) no-repeat;
+				background-size: 100% 100%;
+}
+
+/* Rating */
+
+.ratings{
+    overflow: auto;
+}
+
+.ratings div.star{
+    float: left;
+    height: 14px;
+    width: 14px;
+    background-size: 12px !important;
+    background-position: 50%;
+}
+
+.ratings .full-star{
+    background: url(../images/full_star.png) no-repeat;
+}
+
+.ratings .half-star{
+    background: url(../images/half_star.png) no-repeat;
+}
+
+
+.ratings .no-star{
+    background: url(../images/no_star.png) no-repeat;
+}
+
+.ratings .value{
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+
+/* Pull to refresh plugin */
+
+.x-list-pullrefresh{
+				color : #fff;
+}
+
+.x-list-pullrefresh-arrow{
+				-webkit-mask: center center url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAA8CAYAAAAUufjgAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAjFJREFUeNrsmU8oREEYwOexdtNuKBfFwdVhCyfuysnFiXISS+1BLopyUpKLXETkRLaUi1LK3Q2lpPbiQLnIn03a/Hm+z86Ttv0zM++bfbOar36Hbad5v535Zp7v47iuy0wOpyoEHccRHV9L9NxPkUE/bhKCOKiOSPAdn69DsJ5I8E2HYA0QJRJ8Bb50CDYRCT7pEMQD0kwk+CByUFQEW4gE73UIhoA2IsFb4ENEMCQ5MdU1IxwygpT3oKNLMGyyYFVscdhusc8tDpu+xRG7xf95BW0O2kNiV1AgIvaQ2BzUJNgJNJYZGyUU7OG1cal4Bi68oqkDPszy2teEwJp5Cdyu/lZ1g8CwIYJ7wEF+2YmrNw90Byx3BizgKhaqizEP1wg7CLLxCEzy/CtauMeBlQDyEfNuGrgU6SyM8F9SyVgHdmRaH6tAb4XkToEp2d4M5mOK0TWMigU2koa8vJMRZPxEb2ss2LEVPMpPLlMRxBgDZjQJLgNbxb6Uab9tAn3EcifAeKkBMoLY+j0GWonk7oB+lmsFkwhidAGHBPmIeTcAnJcbKCuIMQEs+hScAzZEBqoIYuzyFVCJI36lMJ2CDfxibZeUu+EX/4uMIFP8ZyLejxkgK0hG5a8kP4IYSZbr1IuQVHmAX0HGX4VuGfZVJ6cQxPd1uoRcWqDW0SroFVzZAnJZ/h0LWhAjUUAw4XdSSsH8fExRTEgtGAOuOTETBb16Jk412e+bxOSwglYw6PgWYABvLk8P7zGJFwAAAABJRU5ErkJggg==) no-repeat;
+				background : #fff;
+}
+
+/****************** General styles ENDS *********************/
+
+
+/****************************** Category List ******************************/
+
+.category-list .x-list-item{
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed)) !important; /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%) !important; /* Chrome10+,Safari5.1+ */
+				border: 0 !important;
+}
+
+/****************************** Category List ENDS ******************************/
+
+
+/****************************** Place List ******************************/
+
+.placelist .x-list-emptytext{
+				font-size: 14px;
+				color: #fff;
+				padding: 20px;
+}
+
+
+.x-list.placelist .x-list-item .x-dock-horizontal{
+    border: 0 !important;
+}
+
+.x-list.placelist .x-list-item .item{
+    /*				background: rgba(255, 255, 255, 0.8);
+                                    font-size: 14px;
+                                    padding: 8px;*/
+
+    /*				background: rgba(255, 255, 255, 0.8);*/
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10+,Safari5.1+ */
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 8px;
+    -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.6);
+    padding-right: 82px;
+}
+
+.x-list.placelist .x-list-item .item .name{
+    font-weight: bold;
+    margin: 3px 0 8px 0;
+}
+
+.x-list.placelist .x-list-item .item .vicinity{
+    font-size: 12px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.x-list.placelist .x-list-item .item .rating{
+
+}
+
+.x-list.placelist .x-list-item .photo,
+.x-list.placelist .x-list-item .icon-wrapper{
+    position: absolute;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    right: 25px;
+    top: 6px;
+}
+
+.x-list.placelist .x-list-item .photo img{
+    max-width: 75px;
+    max-height: 63px;
+    border: 2px solid white;
+    -webkit-box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.5);
+    background: black;
+}
+
+.x-list.placelist .x-list-item .icon-wrapper{
+    background: #960000;
+    border: 2px solid white;
+    -webkit-box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.x-list.placelist .x-list-item .icon{
+    width: 50px;
+    height: 50px;
+    background: white;
+    -webkit-mask-image: url(http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png);
+    -webkit-mask-size: 35px;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: 50%;
+}
+
+
+.x-list.placelist .placelist-item-selected .item{
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b2e1ff), color-stop(100%,#66b6fc)); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(top, #b2e1ff 0%,#66b6fc 100%); /* Chrome10+,Safari5.1+ */
+}
+
+.x-list.placelist .placelist-item-pressed .item{
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f9fe), color-stop(100%,#d6f0fd)); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(top, #f2f9fe 0%,#d6f0fd 100%); /* Chrome10+,Safari5.1+ */
+}
+
+/****************************** Place List ENDS ******************************/
